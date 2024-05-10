@@ -1,18 +1,17 @@
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, TextInput} from 'react-native';
 import React from 'react';
-import Layout from '../components/Layout/Layout';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const Home = () => {
   return (
-    <Layout>
+    <View style={{height: 90, backgroundColor: '#d6bc76'}}>
       <View>
-        <Text>Home</Text>
+        <TextInput />
         <TouchableOpacity>
-          <Icon name="search"  style={{fontSize:40}}/>
+          <FontAwesome name="search" style={{fontSize: 20}} />
         </TouchableOpacity>
       </View>
-    </Layout>
+    </View>
   );
 };
 
